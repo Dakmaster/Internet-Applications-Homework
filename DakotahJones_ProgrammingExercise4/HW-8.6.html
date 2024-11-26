@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        
+        var listSize;
+        var smallestNum = Infinity;
+        var inputNum;
+
+        // provide user input, store in list size, and create a list of
+        // numbers.
+
+        listSize = window.prompt("Enter the size of the list: ");
+
+        for ( var i = 1; i <= listSize; i++)
+        {                   //string from window prompt is being typecasted
+                        //to a number
+            var inputNum = Number(window.prompt("Enter a number: "));
+            
+            if (inputNum < smallestNum) {
+                smallestNum = inputNum;
+            }
+        }
+        document.writeln("<h1>The smallest number in the list is: "
+             + smallestNum + " </h1>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

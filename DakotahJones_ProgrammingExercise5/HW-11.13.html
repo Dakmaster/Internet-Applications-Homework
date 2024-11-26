@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Character Counter</h1>
+    <form id="textForm">
+        <label for="textInput">Enter text:</label> 
+        <!-- prompt user for input -->
+        <textarea id="textInput" rows="5" placeholder="Type your text here..."></textarea>
+        
+        <label for="searchChar">Enter the character to search for:</label>
+        <input type="text" id="searchChar" maxlength="1" placeholder="e.g., a">
+        
+        <button type="button" onclick="countOccurrences()">Count Occurrences</button>
+    </form>
+    
+    <div id="results"></div>
+    
+    <script type = "text/javascript">
+        function countOccurrences() {
+            // Get input values
+            const text = document.getElementById('textInput').value;
+            const searchChar = document.getElementById('searchChar').value;
+
+            if (searchChar.length !== 1) {
+                document.getElementById('results').innerHTML = `<p style="color: red;">Please enter a single character to search for.</p>`;
+                return;
+            }
+            // Count occurrences
+            let count = 0;
+            let index = text.indexOf(searchChar);
+            while (index !== -1) {
+                count++;
+                index = text.indexOf(searchChar, index + 1);
+            }
+
+            // Display the result
+            document.getElementById('results').innerHTML = `<p>The character "${searchChar}" occurs ${count} time(s) in the text.</p>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <body>
+            <h1>
+                <p>The average rating of the food was:
+                    <meter value="0.7">70%</meter>
+                    7 out of 10.
+                </p>
+                <p>
+                    <details>
+                       <summary>Survey Results</summary>
+                       <p>The ratings on average were 7 out of 10.</p> 
+                    </details>
+                </p>
+                <input type="text"autofocus placeholder="Enter your first name">
+                <datalist id="States">
+                    <option value="Michigan"></option>
+                    <option value="Florida"></option>
+                    <option value="Texas"></option>
+                    <option value="Ohio"></option>
+                    <option value="Wisconsin"></option>
+                </datalist>
+                <label for="States">States</label>
+                <input type="text"
+                list="States" name="States" id="States"
+                size="50" autocomplete="off"/>
+                <!-- Run in Chrome or else dropdown will not work properly.-->
+                 <input type="range" name="volume" id="volume"
+                 min="0" max="100" value="50">
+                 <p>
+                    Students were asked to rate the food in the cafeteria
+                        <mark>on a scale of 1 to 10. The average results was 7.</mark>
+                 </p>
+            </h1>
+        </body>
+    </head>
+</html>

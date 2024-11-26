@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        
+        var accountNumber;
+        var beginningBalance;
+        var totalItemCharge;
+        var totalCreditCharge;
+        var allowedCreditLimit;
+
+        accountNumber = parseInt(window.prompt("Enter the associated account number: "));
+        beginningBalance = parseInt(window.prompt("Enter the beginning balance: "));
+        totalItemCharge = parseInt(window.prompt("Enter the total item charge: "));
+        totalCreditCharge = parseInt(window.prompt("Enter the total credit charge: "));
+        allowedCreditLimit = parseInt(window.prompt("Enter the allowed credit limit:"));
+
+        // calculate new balance
+
+         var newBalance = beginningBalance + totalItemCharge - totalCreditCharge;
+
+        // function to compare newbalance to limit
+
+        if (newBalance > allowedCreditLimit) {
+            document.writeln("Account number " + accountNumber + ": Credit Limit exceeded"); 
+        } else {
+            document.writeln("Account number " + accountNumber + ": Credit Limit is within alloted amount.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+
+        const basePay = 200;
+        const commission = 0.09;
+
+        const item1 = 239.99;
+        const item2 = 129.75;
+        const item3 = 99.95;
+        const item4 = 350.89;
+
+       // Prompt the user for quantites of each item that was sold
+
+       let item1Sold = parseInt(window.prompt("Enter quantity of Item 1 ($239.99) sold:"))
+       let item2Sold = parseInt(window.prompt("Enter quantity of Item 2 ($129.75) sold:"))
+       let item3Sold = parseInt(window.prompt("Enter quantity of Item 3 ($99.95) sold:"))
+       let item4Sold = parseInt(window.prompt("Enter quantity of Item 4 ($350.89) sold:"))
+       // Calculate the total sales based on what was sold
+
+       let totalSales = (item1Sold * item1) + (item2Sold * item2) + (item3Sold * item3) + (item4Sold + item4);
+
+       let totalEarnings = (totalSales * commission) + basePay;
+
+       document.writeln("<h1>Total earnings for salesperson: $" + totalEarnings.toFixed(2) + "</h1>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

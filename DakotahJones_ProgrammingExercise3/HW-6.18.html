@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+
+        var firstNumber;
+        var secondNumber;
+        var thirdnumber;
+        var number1;
+        var number2;
+        var number3;
+
+        var sum;
+        var average;
+        var product;
+        var smallest;
+        var largest;
+
+        firstNumber = window.prompt("Enter first number: ");
+        secondNumber = window.prompt("Enter second number: ");
+        thirdnumber = window.prompt("Enter third number: ")
+        
+        number1 = parseInt (firstNumber);
+        number2 = parseInt (secondNumber);
+        number3 = parseInt (thirdnumber);
+
+        sum = number1 + number2 + number3
+        average = sum / 3
+        product = number1 * number2 * number3
+        smallest = Math.min(number1, number2, number3)
+        largest = Math.max(number1, number2, number3)
+
+        alert("The sum is " + sum + ".")
+        alert("The average is " + average + ".")
+        alert("The product is " + product + ".")
+        alert("The smallest number is " + smallest + ".")
+        alert("The largest number is " + largest + ".")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

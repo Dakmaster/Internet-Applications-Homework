@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+
+        table {width: 300px;
+        border-collapse: collapse;
+        background-color: lightblue;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            padding: 4px;
+        }
+        th { text-align: left;
+            color: white;
+            background-color: darkblue;
+        }
+            tr.oddrow {background-color: white;
+        }
+        
+        
+    </style>
+    <script type = "text/javascript">
+
+        var amount;
+        var principal = 1000.00;
+        var rate = 0.05;
+        
+        for ( var year = 1; year <= 6; ++year)
+            {
+                document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            {
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            { var rate = 0.06;
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            { var rate = 0.07;
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            { var rate = 0.08;
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            { var rate = 0.09;
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            { var rate = 0.10;
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");
+            }
+            document.writeln("<table>");
+            document.writeln(
+                "<caption>Calculating Compound Interesting</caption>");
+            document.writeln(
+                "<thead><tr><th>Year</th>" );
+            document.writeln(
+                "<th>Amount on deposit</th>");
+            document.writeln(
+                "</tr></thead><tbody>" );
+            
+            for ( var year = 1; year <= 10; ++year)
+            {
+                amount = principal * Math.pow(1.0 + rate, year);
+                
+                if (year % 2 !== 0){
+                    document.writeln("<tr class='oddrow'><td>" + year +
+                "</td><td>" + amount.toFixed(2) + "</td><tr>");}
+                else{
+                    document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) +
+                "</td></tr>");}
+            }
+            document.writeln("</tbody></table>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

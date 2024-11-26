@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        function celsius(fahrenheit) {
+            return (5.0 / 9.0) * (fahrenheit - 32);
+        } 
+
+        function fahrenheit(celsius) {
+            return (9.0 / 5.0) * celsius + 32;
+        } 
+
+        function displayCelsius() {
+            var inputField = document.getElementById("tempField");
+            var fahrenheitValue = parseFloat(inputField.value);
+            var result = document.getElementById("result");
+            result.innerHTML = "Equivalent in Celsius: " + celsius(fahrenheitValue).toFixed(2);
+        } 
+
+        function displayFahrenheit() {
+            var inputField = document.getElementById("tempField");
+            var celsiusValue = parseFloat(inputField.value);
+            var result = document.getElementById("result");
+            result.innerHTML = "Equivalent in Fahrenheit: " + fahrenheit(celsiusValue).toFixed(2);
+        } 
+
+        function start() {
+            var toCelsiusButton = document.getElementById("toCelsiusButton");
+            var toFahrenheitButton = document.getElementById("toFahrenheitButton");
+            toCelsiusButton.addEventListener("click", displayCelsius, false);
+            toFahrenheitButton.addEventListener("click", displayFahrenheit, false);
+        } 
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <form action="#">
+        <p><label>Temperature:
+            <input id="tempField" type="number" step="any"></label></p>
+        <p>
+            <input id="toCelsiusButton" type="button" value="Convert to Celsius">
+            <input id="toFahrenheitButton" type="button" value="Convert to Fahrenheit">
+        </p>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
