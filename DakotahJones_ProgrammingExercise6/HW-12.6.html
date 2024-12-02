@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            transition: background-color 0.5s, font-family 0.5s;
+        }
+        label {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        select, button {
+            font-size: 1em;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Background Color and Font</h1>
+    <div>
+        <label for="bgColor">Select Background Color:</label>
+        <select id="bgColor">
+            <!-- Select background colors-->
+            <option value="white">White</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="lightpink">Light Pink</option>
+            <option value="lightgray">Light Gray</option>
+        </select>
+    </div>
+            <!-- Select the font style -->
+    <div>
+        <label for="fontStyle">Select Font Style:</label>
+        <select id="fontStyle">
+            <option value="sans-serif">Sans Serif</option>
+            <option value="serif">Serif</option>
+        </select>
+    </div>
+            <!-- Apply the selection and confirm -->
+    <button onclick="applyStyles()">Apply Styles</button>
+
+    <script>
+        function applyStyles() {
+            // Get the selected background color and font style
+            const bgColor = document.getElementById('bgColor').value;
+            const fontStyle = document.getElementById('fontStyle').value;
+
+            // Apply the styles to the body
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.fontFamily = fontStyle === 'serif' ? 'Georgia, serif' : 'Arial, sans-serif';
+        }
+    </script>
+</body>
+</html>

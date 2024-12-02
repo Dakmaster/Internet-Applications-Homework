@@ -1,0 +1,30 @@
+/* For HW-13.3&13.4 */
+/* Style for the table container */
+#canvas {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+    border: 2px solid #333;
+}
+
+/* Style for each table cell */
+#canvas td {
+    border: 1px solid #ccc;
+    width: 8px;
+    height: 8px;
+    cursor: crosshair;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Style for cells when the Ctrl key is pressed */
+#canvas td.blue {
+    background-color: #00f;
+}
+
+/* Style for cells when the Shift key is pressed */
+#canvas td.red {
+    background-color: #f00;
+}
