@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Fig. 14.7: roundedrectangle.html -->
+<!-- Drawing two rounded rectangles on a canvas. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quadratic Curves</title>
+  </head>
+  <body>
+    <canvas id="drawRoundedRect" width="300" height="300" style="border: 1px solid black;"></canvas>
+    <script>
+      var canvas = document.getElementById("drawRoundedRect");
+      var context = canvas.getContext("2d");
+
+      // Function to draw a rounded rectangle
+      function roundedRect(x, y, width, height, radius) {
+        context.beginPath();
+        context.moveTo(x + radius, y);
+        context.lineTo(x + width - radius, y);
+        context.quadraticCurveTo(x + width, y, x + width, y + radius);
+        context.lineTo(x + width, y + height - radius);
+        context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+        context.lineTo(x + radius, y + height);
+        context.quadraticCurveTo(x, y + height, x, y + height - radius);
+        context.lineTo(x, y + radius);
+        context.quadraticCurveTo(x, y, x + radius, y);
+        context.stroke();
+      }
+
+      // Call the roundedRect function twice with different arguments
+      roundedRect(20, 20, 100, 100, 15);  // First rounded rectangle
+      roundedRect(140, 50, 150, 80, 20); // Second rounded rectangle
+    </script>
+  </body>
+</html>
